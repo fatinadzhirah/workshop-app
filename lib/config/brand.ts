@@ -4,17 +4,20 @@
 // nothing here touches the database, auth, or dependencies.
 // ─────────────────────────────────────────────────────────────
 export const brand = {
-  /** The app's name — shown in the header, homepage and browser tab. */
-  name: "Noted",
+  /** The restaurant's name — shown in the header, homepage and browser tab. */
+  name: "FoodFat",
 
   /** One-line tagline shown under the name on the homepage. */
-  tagline: "Everything you meant to remember.",
+  tagline: "Good food, one tap away.",
 
-  /** Main accent color (any CSS color, e.g. "#4f46e5" or "rebeccapurple"). */
-  primaryColor: "#1d4ed8",
+  /** Main accent color (any CSS color, e.g. "#ea580c" or "rebeccapurple"). */
+  primaryColor: "#ea580c",
 
   /** Logo image in /public — swap the file or point to a new one. */
   logo: "/logo.svg",
+
+  /** Currency used to print every price (any ISO code, e.g. "MYR", "SGD", "USD"). */
+  currency: "MYR",
 
   /** Toggle feature: show the workshop badge on the homepage. */
   showWorkshopBadge: true,

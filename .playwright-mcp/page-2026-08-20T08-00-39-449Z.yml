@@ -1,0 +1,66 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img "FoodFat logo" [ref=e6]
+          - text: FoodFat
+        - navigation [ref=e7]:
+          - link "Menu" [ref=e8] [cursor=pointer]:
+            - /url: /menu
+          - button "Cart, 0 items" [ref=e9]: 🛒Cart
+          - link "Sign in" [ref=e10] [cursor=pointer]:
+            - /url: /login
+          - link "Sign up" [ref=e11] [cursor=pointer]:
+            - /url: /signup
+    - main [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]: Built at the TimeTec AI Workshop
+        - heading "Hot food, ordered in three taps." [level=1] [ref=e15]
+        - paragraph [ref=e16]: Browse the kitchen, build your order and pick it up — or have it delivered. No phone calls, no waiting on hold, no forgetting what you wanted last time.
+        - paragraph [ref=e17]: Good food, one tap away.
+        - link "See the menu" [ref=e18] [cursor=pointer]:
+          - /url: /menu
+      - generic [ref=e19]:
+        - heading "Today's picks" [level=2] [ref=e20]
+        - generic [ref=e21]:
+          - link [ref=e22] [cursor=pointer]:
+            - /url: /menu
+            - text: 🍗
+            - heading "Chicken Chop" [level=3] [ref=e23]
+            - paragraph [ref=e24]: Grilled chicken thigh, black pepper sauce, fries.
+            - paragraph [ref=e25]: RM 19.00
+          - link [ref=e26] [cursor=pointer]:
+            - /url: /menu
+            - text: 🥘
+            - heading "Beef Rendang Rice" [level=3] [ref=e27]
+            - paragraph [ref=e28]: Slow-cooked dry beef curry with steamed rice.
+            - paragraph [ref=e29]: RM 18.00
+          - link [ref=e30] [cursor=pointer]:
+            - /url: /menu
+            - text: 🥗
+            - heading "Veggie Buddha Bowl" [level=3] [ref=e31]
+            - paragraph [ref=e32]: Brown rice, roast pumpkin, chickpeas, tahini.
+            - paragraph [ref=e33]: RM 16.00
+      - generic [ref=e34]:
+        - heading "How it works" [level=2] [ref=e35]
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - heading "1. Pick your dishes" [level=3] [ref=e38]
+            - paragraph [ref=e39]: Browse the menu and add what you fancy to the cart.
+          - generic [ref=e40]:
+            - heading "2. Pickup or delivery" [level=3] [ref=e41]
+            - paragraph [ref=e42]: Choose at checkout. We'll add the delivery fee only if you need it.
+          - generic [ref=e43]:
+            - heading "3. Track it to the door" [level=3] [ref=e44]
+            - paragraph [ref=e45]: Watch it go from confirmed to ready, and reorder your favourites in one tap.
+      - generic [ref=e46]:
+        - heading "Hungry?" [level=2] [ref=e47]
+        - generic [ref=e48]:
+          - link "Start an order" [ref=e49] [cursor=pointer]:
+            - /url: /menu
+          - link "Create an account" [ref=e50] [cursor=pointer]:
+            - /url: /signup
+    - contentinfo [ref=e51]: FoodFat — Good food, one tap away.
+  - button "Open Next.js Dev Tools" [ref=e57] [cursor=pointer]

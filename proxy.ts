@@ -28,4 +28,8 @@ export async function proxy(request: NextRequest) {
   return response;
 }
 
-export const config = { matcher: ["/app/:path*"] };
+// Every page that renders the header needs a fresh session, because the header
+// shows different links depending on who you are. Static assets are left out.
+export const config = {
+  matcher: ["/", "/menu", "/login", "/signup", "/checkout", "/app/:path*"],
+};

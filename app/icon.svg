@@ -1,13 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <rect width="32" height="32" rx="8" fill="#ea580c"/>
   <g stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round">
-    <!-- fork: three tines joined by a neck, then the handle -->
     <path d="M8 7v5"/>
     <path d="M11 7v5"/>
     <path d="M14 7v5"/>
     <path d="M8 12h6"/>
     <path d="M11 12v13" stroke-width="2.4"/>
-    <!-- spoon -->
     <ellipse cx="22" cy="11.5" rx="3.2" ry="4.5"/>
     <path d="M22 16v9" stroke-width="2.4"/>
   </g>

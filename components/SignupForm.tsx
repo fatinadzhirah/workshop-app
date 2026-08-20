@@ -7,7 +7,12 @@ import { brand } from "@/lib/config/brand";
 import { getSupabaseBrowserClient, isSupabaseConfigured } from "@/lib/supabase/client";
 import BackendNotConnected from "./BackendNotConnected";
 
-export default function SignupForm() {
+export default function SignupForm({
+  next = "/app",
+}: {
+  /** Already validated by safeNextPath() on the server. */
+  next?: string;
+}) {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -38,7 +43,7 @@ export default function SignupForm() {
     }
     if (data.session) {
       // Email confirmation is OFF (the workshop default) — signed in already.
-      router.push("/app");
+      router.push(next);
       router.refresh();
     } else {
       // Email confirmation is ON — tell the user to check their inbox.

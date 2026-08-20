@@ -7,7 +7,14 @@ import { brand } from "@/lib/config/brand";
 import { getSupabaseBrowserClient, isSupabaseConfigured } from "@/lib/supabase/client";
 import BackendNotConnected from "./BackendNotConnected";
 
-export default function LoginForm({ confirmError = false }: { confirmError?: boolean }) {
+export default function LoginForm({
+  confirmError = false,
+  next = "/app",
+}: {
+  confirmError?: boolean;
+  /** Already validated by safeNextPath() on the server. */
+  next?: string;
+}) {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,7 +35,8 @@ export default function LoginForm({ confirmError = false }: { confirmError?: boo
       setError("Sign-in failed. Check your email and password and try again.");
       return;
     }
-    router.push("/app");
+    // Back to wherever you were headed — /checkout keeps your cart intact.
+    router.push(next);
     router.refresh();
   }
 
@@ -81,7 +89,11 @@ export default function LoginForm({ confirmError = false }: { confirmError?: boo
       </form>
       <p className="mt-4 text-sm text-gray-600">
         No account yet?{" "}
-        <Link href="/signup" className="underline" style={{ color: brand.primaryColor }}>
+        <Link
+          href={`/signup?next=${encodeURIComponent(next)}`}
+          className="underline"
+          style={{ color: brand.primaryColor }}
+        >
           Sign up
         </Link>
       </p>
