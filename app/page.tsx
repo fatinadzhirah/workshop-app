@@ -7,14 +7,14 @@ import { brand } from "@/lib/config/brand";
 // Edit the words below, or reorder the sections in SECTION_ORDER.
 // ─────────────────────────────────────────────────────────────
 
-const headline = "Keep track of the stuff that matters.";
+const headline = "Everything you meant to remember.";
 const subcopy =
-  "A private list that's yours alone. Add notes, ideas and reminders — they're saved securely and only you can see them.";
+  "Jot it down once and stop carrying it in your head. Notes, ideas and reminders — private to you, saved the moment you write them.";
 
 const howItWorks = [
-  { title: "1. Create an account", text: "Sign up with just an email and a password." },
-  { title: "2. Add your items", text: "Notes, ideas, tasks — anything you want to keep." },
-  { title: "3. Come back anytime", text: "Your list is saved in the cloud, private to you." },
+  { title: "1. Sign up in seconds", text: "Just an email and a password — nothing else needed." },
+  { title: "2. Write it down", text: "A title and a note. Reminders, ideas, anything you don't want to lose." },
+  { title: "3. It's there when you need it", text: "Saved securely in the cloud and visible only to you." },
 ];
 
 // Reorder these to change the page layout (Module 4 layout edit).
